@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinique CareLumina - Soins de santé d'exception</title>
+    <meta name="description"
+        content="Découvrez la Clinique CareLumina, établissement de santé privé alliant expertise médicale de pointe et approche humaine. Prenez rendez-vous en ligne.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <!-- Header / Navbar -->
+    <header class="navbar-container">
+        <div class="navbar container">
+            <a href="#" class="logo">
+                <span class="logo-icon"><i data-lucide="activity"></i></span>
+                <span class="logo-text">Care<span>Lumina</span></span>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <a href="#accueil" class="nav-link active">Accueil</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#medecins" class="nav-link">Médecins</a>
+                    <a href="#temoignages" class="nav-link">Témoignages</a>
+                    <a href="#faq" class="nav-link">FAQ</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </ul>
+
+            </nav>
+
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-toggle-btn" aria-label="Changer de thème">
+                    <i data-lucide="moon" class="theme-icon-dark"></i>
+                    <i data-lucide="sun" class="theme-icon-light"></i>
+                </button>
+                <a href="#reservation" class="btn btn-primary btn-nav-cta">Prendre RDV</a>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Ouvrir le menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="accueil" class="hero-section">
+            <div class="hero-bg-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+            </div>
+
+            <div class="container hero-container">
+                <div class="hero-content fade-in-up">
+                    <div class="badge-new">
+                        <span class="badge-dot"></span>
+                        <span class="badge-text">Urgences 24h/24 & 7j/7 assurées</span>
+                    </div>
+                    <h1 class="hero-title">Votre santé,<br>notre unique <span>horizon</span></h1>
+                    <p class="hero-subtitle">La Clinique CareLumina allie expertise médicale de pointe et approche
+                        profondément humaine pour vous offrir des soins d'exception dans un environnement serein.</p>
+
+                    <div class="hero-actions">
+                        <a href="#reservation" class="btn btn-primary btn-lg pulse-effect">Prendre Rendez-vous</a>
+                        <a href="#services" class="btn btn-secondary btn-lg">Découvrir nos spécialités</a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-target="50">0</h3>
+                            <p class="stat-label">Médecins Experts</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-target="99">0</h3>
+                            <p class="stat-label">% Satisfaction</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-target="15">0</h3>
+                            <p class="stat-label">min Attente Max</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual fade-in-up delay-200">
+                    <div class="hero-image-wrapper">
+                        <!-- We use custom stylized visual cards to represent hospital state of the art tech -->
+                        <div class="main-card-visual">
+                            <div class="doctor-badge">
+                                <div class="doctor-avatar">
+                                    <i data-lucide="user-check"></i>
+                                </div>
+                                <div class="doctor-badge-info">
+                                    <h4>Dr. Clara Dubois</h4>
+                                    <p>Cardiologue Référent</p>
+                                </div>
+                                <span class="online-indicator"></span>
+                            </div>
+
+                            <div class="heart-rate-card">
+                                <div class="heart-rate-header">
+                                    <span>Rythme Cardiaque</span>
+                                    <i data-lucide="heart" class="text-danger beat-animation"></i>
+                                </div>
+                                <div class="heart-rate-value">72 <span>BPM</span></div>
+                                <svg class="pulse-svg" viewBox="0 0 100 30">
+                                    <path d="M0 15 L30 15 L35 5 L40 25 L45 15 L50 15 L53 10 L56 20 L59 15 L100 15"
+                                        fill="none" stroke="currentColor" stroke-width="2" />
+                                </svg>
+                            </div>
+
+                            <div class="equipment-card">
+                                <div class="eq-icon"><i data-lucide="shield-check"></i></div>
+                                <div class="eq-text">
+                                    <h4>Certifié ISO 9001</h4>
+                                    <p>Qualité & Sécurité</p>
+                                </div>
+                            </div>
+
+                            <!-- Geometric aesthetic illustration element -->
+                            <div class="aesthetic-glow"></div>
+
+                            <div class="hospital-illustration">
+                                <div class="ill-building">
+                                    <div class="ill-cross"><i data-lucide="plus"></i></div>
+                                    <div class="ill-windows">
+                                        <span></span><span></span><span></span>
+                                        <span></span><span></span><span></span>
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emergency Urgent Callout -->
+        <section class="emergency-callout container fade-in-up">
+            <div class="emergency-wrapper">
+                <div class="emergency-info">
+                    <div class="emergency-icon-box">
+                        <i data-lucide="phone-call" class="shake-animation"></i>
+                    </div>
+                    <div>
+                        <h3 class="emergency-title">Ligne d'Urgence 24h/24</h3>
+                        <p class="emergency-desc">Pour toute urgence médicale immédiate, contactez notre équipe de
+                            garde.</p>
+                    </div>
+                </div>
+                <div class="emergency-cta">
+                    <a href="tel:+33123456789" class="emergency-phone">+33 (0)1 23 45 67 89</a>
+                    <span class="emergency-or">ou</span>
+                    <a href="#contact" class="btn btn-white-outline">Itinéraire d'accès</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section section-padding">
+            <div class="container">
+                <div class="section-header text-center fade-in-up">
+                    <span class="section-tagline">Nos Services Cliniques</span>
+                    <h2 class="section-title">Une expertise multidisciplinaire</h2>
+                    <p class="section-subtitle">Nous proposons une large gamme de spécialités médicales dotées
+                        d'équipements technologiques de pointe.</p>
+                </div>
+
+                <div class="services-filter fade-in-up delay-100">
+                    <button class="filter-btn active" data-filter="all">Tous</button>
+                    <button class="filter-btn" data-filter="specialite">Spécialités</button>
+                    <button class="filter-btn" data-filter="diagnostic">Diagnostic</button>
+                    <button class="filter-btn" data-filter="urgence">Urgences</button>
+                </div>
+
+                <div class="services-grid fade-in-up delay-200">
+                    <!-- Service 1 -->
+                    <div class="service-card" data-category="specialite">
+                        <div class="service-icon"><i data-lucide="heart-pulse"></i></div>
+                        <h3 class="service-name">Cardiologie</h3>
+                        <p class="service-desc">Diagnostic et traitement complet des maladies cardiovasculaires avec des
+                            équipements d'imagerie de dernière génération.</p>
+                        <ul class="service-bullets">
+                            <li><i data-lucide="check"></i> Échographies cardiaques</li>
+                            <li><i data-lucide="check"></i> Épreuves d'effort</li>
+                            <li><i data-lucide="check"></i> Cardiologie interventionnelle</li>
+                        </ul>
+                        <a href="#reservation" class="service-link">Prendre rendez-vous <i
+                                data-lucide="arrow-right"></i></a>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card" data-category="specialite">
+                        <div class="service-icon"><i data-lucide="baby"></i></div>
+                        <h3 class="service-name">Pédiatrie</h3>
+                        <p class="service-desc">Des soins bienveillants et spécialisés pour la santé et le développement
+                            harmonieux de vos enfants, de la naissance à l'adolescence.</p>
+                        <ul class="service-bullets">
+                            <li><i data-lucide="check"></i> Suivi de croissance</li>
+                            <li><i data-lucide="check"></i> Urgences pédiatriques</li>
+                            <li><i data-lucide="check"></i> Vaccinations</li>
+                        </ul>
+                        <a href="#reservation" class="service-link">Prendre rendez-vous <i
+                                data-lucide="arrow-right"></i></a>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card" data-category="specialite">
+                        <div class="service-icon"><i data-lucide="brain"></i></div>
+                        <h3 class="service-name">Neurologie</h3>
+                        <p class="service-desc">Prise en charge spécialisée des troubles du système nerveux central, des
+                            migraines, de l'épilepsie et du suivi post-AVC.</p>
+                        <ul class="service-bullets">
+                            <li><i data-lucide="check"></i> Électroencéphalogrammes (EEG)</li>
+                            <li><i data-lucide="check"></i> Consultations mémoire</li>
+                            <li><i data-lucide="check"></i> Pathologies neuro-dégénératives</li>
+                        </ul>
+                        <a href="#reservation" class="service-link">Prendre rendez-vous <i
+                                data-lucide="arrow-right"></i></a>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-card" data-category="diagnostic">
+                        <div class="service-icon"><i data-lucide="scan"></i></div>
+                        <h3 class="service-name">Imagerie Médicale</h3>
+                        <p class="service-desc">Plateau technique de radiologie complet pour des diagnostics rapides,
+                            précis et sécurisés.</p>
+                        <ul class="service-bullets">
+                            <li><i data-lucide="check"></i> IRM & Scanner de pointe</li>
+                            <li><i data-lucide="check"></i> Échographie et Mammographie</li>
+                            <li><i data-lucide="check"></i> Radiologie numérique</li>
+                        </ul>
+                        <a href="#reservation" class="service-link">Prendre rendez-vous <i
+                                data-lucide="arrow-right"></i></a>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="service-card" data-category="urgence">
+                        <div class="service-icon"><i data-lucide="stretcher"></i></div>
+                        <h3 class="service-name">Urgences & Réanimation</h3>
+                        <p class="service-desc">Service d'accueil des urgences opérationnel en continu avec une équipe
+                            médicale pluridisciplinaire d'astreinte.</p>
+                        <ul class="service-bullets">
+                            <li><i data-lucide="check"></i> Accueil 24h/24 et 7j/7</li>
+                            <li><i data-lucide="check"></i> Soins intensifs</li>
+                            <li><i data-lucide="check"></i> Médecins urgentistes séniors</li>
+                        </ul>
+                        <a href="#reservation" class="service-link">Prendre rendez-vous <i
+                                data-lucide="arrow-right"></i></a>
+                    </div>
+
+                    <!-- Service 6 -->
+                    <div class="service-card" data-category="diagnostic">
+                        <div class="service-icon"><i data-lucide="flask"></i></div>
+                        <h3 class="service-name">Laboratoire d'Analyses</h3>
+                        <p class="service-desc">Examens biologiques de haute précision réalisés sur place pour des
+                            résultats rapides transmis directement à vos médecins.</p>
+                        <ul class="service-bullets">
+                            <li><i data-lucide="check"></i> Analyses sanguines d'urgence</li>
+                            <li><i data-lucide="check"></i> Tests immunologiques</li>
+                            <li><i data-lucide="check"></i> PCR et microbiologie</li>
+                        </ul>
+                        <a href="#reservation" class="service-link">Prendre rendez-vous <i
+                                data-lucide="arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Appointment Step-by-Step Booking Form -->
+        <section id="reservation" class="booking-section section-padding">
+            <div class="booking-bg-glow"></div>
+            <div class="container">
+                <div class="booking-wrapper fade-in-up">
+                    <div class="booking-sidebar">
+                        <div class="booking-sidebar-content">
+                            <span class="booking-tag">Simple & Rapide</span>
+                            <h2>Prendre Rendez-vous en Ligne</h2>
+                            <p>Planifiez votre consultation en moins de 2 minutes. Sélectionnez votre spécialité,
+                                choisissez votre créneau et renseignez vos informations.</p>
+
+                            <div class="booking-steps-nav">
+                                <div class="step-nav-item active" data-step="1">
+                                    <div class="step-nav-number">1</div>
+                                    <div class="step-nav-text">Spécialité</div>
+                                </div>
+                                <div class="step-nav-item" data-step="2">
+                                    <div class="step-nav-number">2</div>
+                                    <div class="step-nav-text">Date & Praticien</div>
+                                </div>
+                                <div class="step-nav-item" data-step="3">
+                                    <div class="step-nav-number">3</div>
+                                    <div class="step-nav-text">Coordonnées</div>
+                                </div>
+                            </div>
+
+                            <div class="booking-assistance">
+                                <div class="assist-icon"><i data-lucide="phone"></i></div>
+                                <div>
+                                    <h5>Besoin d'aide ?</h5>
+                                    <p>Nos secrétaires vous répondent :<br><strong>+33 (0)1 99 88 77 66</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="booking-form-area">
+                        <!-- Progress Bar -->
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" id="progressBar"></div>
+                        </div>
+
+                        <form id="appointmentForm" class="appointment-form" novalidate>
+                            <!-- Step 1: Speciality selection -->
+                            <div class="form-step step-active" data-step="1">
+                                <h3 class="step-title">1. Choisissez une Spécialité</h3>
+                                <p class="step-subtitle">Sélectionnez la discipline médicale pour votre consultation.
+                                </p>
+
+                                <div class="specialty-grid">
+                                    <label class="specialty-option">
+                                        <input type="radio" name="specialty" value="Cardiologie" checked>
+                                        <span class="specialty-box">
+                                            <i data-lucide="heart-pulse"></i>
+                                            <span class="spec-name">Cardiologie</span>
+                                        </span>
+                                    </label>
+                                    <label class="specialty-option">
+                                        <input type="radio" name="specialty" value="Pédiatrie">
+                                        <span class="specialty-box">
+                                            <i data-lucide="baby"></i>
+                                            <span class="spec-name">Pédiatrie</span>
+                                        </span>
+                                    </label>
+                                    <label class="specialty-option">
+                                        <input type="radio" name="specialty" value="Neurologie">
+                                        <span class="specialty-box">
+                                            <i data-lucide="brain"></i>
+                                            <span class="spec-name">Neurologie</span>
+                                        </span>
+                                    </label>
+                                    <label class="specialty-option">
+                                        <input type="radio" name="specialty" value="Imagerie Médicale">
+                                        <span class="specialty-box">
+                                            <i data-lucide="scan"></i>
+                                            <span class="spec-name">Imagerie</span>
+                                        </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-actions">
+                                    <span></span><!-- placeholder spacing -->
+                                    <button type="button" class="btn btn-primary btn-next">Continuer <i
+                                            data-lucide="arrow-right"></i></button>
+                                </div>
+                            </div>
+
+                            <!-- Step 2: Doctor and date -->
+                            <div class="form-step" data-step="2">
+                                <h3 class="step-title">2. Médecin & Disponibilité</h3>
+                                <p class="step-subtitle">Sélectionnez le praticien et le créneau qui vous conviennent.
+                                </p>
+
+                                <div class="form-group">
+                                    <label for="doctorSelect" class="form-label">Médecin Spécialiste</label>
+                                    <div class="select-wrapper">
+                                        <select id="doctorSelect" name="doctor" required>
+                                            <option value="" disabled selected>Sélectionnez un médecin</option>
+                                            <!-- Dynamically populated or statically written with JS link -->
+                                            <option value="Dr. Clara Dubois">Dr. Clara Dubois (Cardiologie)</option>
+                                            <option value="Dr. Marc Lemoine">Dr. Marc Lemoine (Pédiatrie)</option>
+                                            <option value="Dr. Sophie Renard">Dr. Sophie Renard (Neurologie)</option>
+                                            <option value="Dr. Thomas Bernard">Dr. Thomas Bernard (Imagerie)</option>
+                                        </select>
+                                    </div>
+                                    <div class="invalid-feedback">Veuillez choisir un médecin.</div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group col-6">
+                                        <label for="bookingDate" class="form-label">Date souhaitée</label>
+                                        <input type="date" id="bookingDate" name="date" required>
+                                        <div class="invalid-feedback">Sélectionnez une date valide.</div>
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <label for="bookingTime" class="form-label">Heure</label>
+                                        <div class="select-wrapper">
+                                            <select id="bookingTime" name="time" required>
+                                                <option value="" disabled selected>Choisir un créneau</option>
+                                                <option value="09:00">09:00</option>
+                                                <option value="10:00">10:00</option>
+                                                <option value="11:00">11:00</option>
+                                                <option value="14:00">14:00</option>
+                                                <option value="15:00">15:00</option>
+                                                <option value="16:00">16:00</option>
+                                            </select>
+                                        </div>
+                                        <div class="invalid-feedback">Sélectionnez une heure.</div>
+                                    </div>
+                                </div>
+
+                                <div class="form-actions">
+                                    <button type="button" class="btn btn-secondary-outline btn-prev"><i
+                                            data-lucide="arrow-left"></i> Précédent</button>
+                                    <button type="button" class="btn btn-primary btn-next">Continuer <i
+                                            data-lucide="arrow-right"></i></button>
+                                </div>
+                            </div>
+
+                            <!-- Step 3: Patient details -->
+                            <div class="form-step" data-step="3">
+                                <h3 class="step-title">3. Informations Patient</h3>
+                                <p class="step-subtitle">Saisissez vos coordonnées pour valider la réservation.</p>
+
+                                <div class="form-row">
+                                    <div class="form-group col-6">
+                                        <label for="lastName" class="form-label">Nom</label>
+                                        <input type="text" id="lastName" name="lastName" placeholder="Ex: Dupont"
+                                            required>
+                                        <div class="invalid-feedback">Le nom est obligatoire.</div>
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <label for="firstName" class="form-label">Prénom</label>
+                                        <input type="text" id="firstName" name="firstName" placeholder="Ex: Jean"
+                                            required>
+                                        <div class="invalid-feedback">Le prénom est obligatoire.</div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="patientEmail" class="form-label">Adresse E-mail</label>
+                                    <input type="email" id="patientEmail" name="email"
+                                        placeholder="Ex: jean.dupont@email.com" required>
+                                    <div class="invalid-feedback">Veuillez entrer une adresse e-mail valide.</div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="patientPhone" class="form-label">Numéro de Téléphone</label>
+                                    <input type="tel" id="patientPhone" name="phone" placeholder="Ex: 06 12 34 56 78"
+                                        pattern="[0-9\s\-\+\.]{10,15}" required>
+                                    <div class="invalid-feedback">Entrez un numéro de téléphone valide.</div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="bookingNotes" class="form-label">Motif de la consultation / Remarques
+                                        (Optionnel)</label>
+                                    <textarea id="bookingNotes" name="notes" rows="3"
+                                        placeholder="Précisez brièvement le motif ou des consignes particulières..."></textarea>
+                                </div>
+
+                                <div class="form-actions">
+                                    <button type="button" class="btn btn-secondary-outline btn-prev"><i
+                                            data-lucide="arrow-left"></i> Précédent</button>
+                                    <button type="submit" class="btn btn-primary pulse-effect">Confirmer le RDV <i
+                                            data-lucide="check"></i></button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <!-- Success view (hidden by default) -->
+                        <div class="booking-success" id="bookingSuccess">
+                            <div class="success-icon-wrapper">
+                                <i data-lucide="calendar-check"></i>
+                            </div>
+                            <h3>Rendez-vous Confirmé !</h3>
+                            <p class="success-message">Votre demande a été enregistrée avec succès. Un e-mail de
+                                confirmation contenant les détails vous a été envoyé.</p>
+
+                            <div class="receipt-box">
+                                <div class="receipt-row">
+                                    <span>Spécialité :</span>
+                                    <strong id="receiptSpecialty">-</strong>
+                                </div>
+                                <div class="receipt-row">
+                                    <span>Médecin :</span>
+                                    <strong id="receiptDoctor">-</strong>
+                                </div>
+                                <div class="receipt-row">
+                                    <span>Date & Heure :</span>
+                                    <strong id="receiptDateTime">-</strong>
+                                </div>
+                                <div class="receipt-row">
+                                    <span>Patient :</span>
+                                    <strong id="receiptPatientName">-</strong>
+                                </div>
+                            </div>
+
+                            <button type="button" id="btnResetBooking" class="btn btn-primary">Prendre un autre
+                                RDV</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Doctors / Team Section -->
+        <section id="medecins" class="doctors-section section-padding">
+            <div class="container">
+                <div class="section-header text-center fade-in-up">
+                    <span class="section-tagline">Notre Équipe Médicale</span>
+                    <h2 class="section-title">Des spécialistes hautement qualifiés</h2>
+                    <p class="section-subtitle">Découvrez les médecins cliniciens qui assurent l'excellence
+                        thérapeutique au quotidien.</p>
+                </div>
+
+                <div class="doctors-grid">
+                    <!-- Doctor 1 -->
+                    <div class="doctor-card fade-in-up delay-100">
+                        <div class="doctor-image-container">
+                            <!-- SVG Stylized Avatar for Doctor with premium medical background gradient -->
+                            <div class="doc-avatar-bg g-cardiology">
+                                <i data-lucide="user" class="doc-icon-placeholder"></i>
+                            </div>
+                            <div class="doctor-socials">
+                                <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                                <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                                <a href="#" aria-label="Envoyer un e-mail"><i data-lucide="mail"></i></a>
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <span class="doc-specialty">Cardiologie</span>
+                            <h3 class="doc-name">Dr. Clara Dubois</h3>
+                            <p class="doc-university">Ancien chef de clinique - Hôpitaux de Paris</p>
+                            <a href="#reservation"
+                                class="btn btn-secondary-outline btn-sm btn-block doc-book-btn">Réserver une
+                                consultation</a>
+                        </div>
+                    </div>
+
+                    <!-- Doctor 2 -->
+                    <div class="doctor-card fade-in-up delay-200">
+                        <div class="doctor-image-container">
+                            <div class="doc-avatar-bg g-pediatrics">
+                                <i data-lucide="user" class="doc-icon-placeholder"></i>
+                            </div>
+                            <div class="doctor-socials">
+                                <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                                <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                                <a href="#" aria-label="Envoyer un e-mail"><i data-lucide="mail"></i></a>
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <span class="doc-specialty">Pédiatrie</span>
+                            <h3 class="doc-name">Dr. Marc Lemoine</h3>
+                            <p class="doc-university">Spécialiste en néonatalogie - Sorbonne Université</p>
+                            <a href="#reservation"
+                                class="btn btn-secondary-outline btn-sm btn-block doc-book-btn">Réserver une
+                                consultation</a>
+                        </div>
+                    </div>
+
+                    <!-- Doctor 3 -->
+                    <div class="doctor-card fade-in-up delay-300">
+                        <div class="doctor-image-container">
+                            <div class="doc-avatar-bg g-neurology">
+                                <i data-lucide="user" class="doc-icon-placeholder"></i>
+                            </div>
+                            <div class="doctor-socials">
+                                <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                                <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                                <a href="#" aria-label="Envoyer un e-mail"><i data-lucide="mail"></i></a>
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <span class="doc-specialty">Neurologie</span>
+                            <h3 class="doc-name">Dr. Sophie Renard</h3>
+                            <p class="doc-university">Chercheuse Inserm - Ph.D en Neurosciences</p>
+                            <a href="#reservation"
+                                class="btn btn-secondary-outline btn-sm btn-block doc-book-btn">Réserver une
+                                consultation</a>
+                        </div>
+                    </div>
+
+                    <!-- Doctor 4 -->
+                    <div class="doctor-card fade-in-up delay-400">
+                        <div class="doctor-image-container">
+                            <div class="doc-avatar-bg g-radiology">
+                                <i data-lucide="user" class="doc-icon-placeholder"></i>
+                            </div>
+                            <div class="doctor-socials">
+                                <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                                <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                                <a href="#" aria-label="Envoyer un e-mail"><i data-lucide="mail"></i></a>
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <span class="doc-specialty">Imagerie Médicale</span>
+                            <h3 class="doc-name">Dr. Thomas Bernard</h3>
+                            <p class="doc-university">Radiologue interventionnel - Faculté de Médecine de Lyon</p>
+                            <a href="#reservation"
+                                class="btn btn-secondary-outline btn-sm btn-block doc-book-btn">Réserver une
+                                consultation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="temoignages" class="testimonials-section section-padding">
+            <div class="testimonials-bg-shapes">
+                <div class="ts-shape shape-left"></div>
+                <div class="ts-shape shape-right"></div>
+            </div>
+
+            <div class="container">
+                <div class="section-header text-center fade-in-up">
+                    <span class="section-tagline">Témoignages de Patients</span>
+                    <h2 class="section-title">Ce qu'ils disent de nous</h2>
+                    <p class="section-subtitle">La satisfaction et le confort de nos patients sont au cœur de nos
+                        préoccupations quotidiennes.</p>
+                </div>
+
+                <div class="testimonial-slider-container fade-in-up delay-100">
+                    <div class="testimonial-slider" id="testimonialSlider">
+                        <!-- Slide 1 -->
+                        <div class="testimonial-slide active">
+                            <div class="testi-stars">
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                            </div>
+                            <blockquote class="testi-quote">
+                                "La prise en charge aux urgences de CareLumina a été d'une rapidité et d'une efficacité
+                                incroyables. Les infirmières et le médecin de garde ont fait preuve de beaucoup
+                                d'empathie. Je me suis senti en totale sécurité."
+                            </blockquote>
+                            <div class="testi-profile">
+                                <div class="testi-avatar"><i data-lucide="smile"></i></div>
+                                <div class="testi-info">
+                                    <h4 class="testi-name">Jean-Pierre M.</h4>
+                                    <p class="testi-patient">Admis en urgence cardiologique</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="testimonial-slide">
+                            <div class="testi-stars">
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                            </div>
+                            <blockquote class="testi-quote">
+                                "J'ai accouché à la maternité de CareLumina le mois dernier. L'accompagnement des
+                                sages-femmes a été formidable, bien au-delà de mes attentes. Le personnel est très
+                                attentionné et les chambres sont spacieuses."
+                            </blockquote>
+                            <div class="testi-profile">
+                                <div class="testi-avatar"><i data-lucide="smile"></i></div>
+                                <div class="testi-info">
+                                    <h4 class="testi-name">Mélanie R.</h4>
+                                    <p class="testi-patient">Maternité et suivi pédiatrique</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="testimonial-slide">
+                            <div class="testi-stars">
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                            </div>
+                            <blockquote class="testi-quote">
+                                "Le système de réservation de rendez-vous en ligne est extrêmement bien fait. Pas besoin
+                                d'appeler plusieurs fois, on choisit directement le médecin et la date. Le suivi
+                                post-opératoire est également excellent."
+                            </blockquote>
+                            <div class="testi-profile">
+                                <div class="testi-avatar"><i data-lucide="smile"></i></div>
+                                <div class="testi-info">
+                                    <h4 class="testi-name">Antoine D.</h4>
+                                    <p class="testi-patient">Patient en chirurgie programmée</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slider Navigation -->
+                    <div class="slider-controls">
+                        <button class="slider-arrow prev" id="sliderPrev" aria-label="Témoignage précédent">
+                            <i data-lucide="chevron-left"></i>
+                        </button>
+                        <div class="slider-dots" id="sliderDots">
+                            <span class="dot active" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                            <span class="dot" data-index="2"></span>
+                        </div>
+                        <button class="slider-arrow next" id="sliderNext" aria-label="Témoignage suivant">
+                            <i data-lucide="chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section (Accordion) -->
+        <section id="faq" class="faq-section section-padding">
+            <div class="container">
+                <div class="section-header text-center fade-in-up">
+                    <span class="section-tagline">Questions Fréquentes</span>
+                    <h2 class="section-title">Nous répondons à vos questions</h2>
+                    <p class="section-subtitle">Trouvez rapidement les réponses concernant l'admission, le
+                        fonctionnement et la prise en charge médicale.</p>
+                </div>
+
+                <div class="faq-accordion-container fade-in-up delay-100">
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span class="faq-question">Comment réserver une consultation en ligne ?</span>
+                            <span class="faq-icon-box"><i data-lucide="plus"></i></span>
+                        </button>
+                        <div class="faq-content">
+                            <div class="faq-content-inner">
+                                Vous pouvez réserver en ligne en utilisant notre <a href="#reservation">formulaire de
+                                    prise de rendez-vous interactif</a>. Il suffit de sélectionner la spécialité, de
+                                choisir votre praticien et votre créneau horaire, puis de valider vos coordonnées. Un
+                                email de confirmation vous sera envoyé immédiatement.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span class="faq-question">La clinique accepte-t-elle la Carte Vitale et les mutuelles
+                                ?</span>
+                            <span class="faq-icon-box"><i data-lucide="plus"></i></span>
+                        </button>
+                        <div class="faq-content">
+                            <div class="faq-content-inner">
+                                Oui, la Clinique CareLumina est conventionnée et accepte la Carte Vitale ainsi que la
+                                majorité des mutuelles de santé. Nous pratiquons le tiers payant sur la part obligatoire
+                                de la sécurité sociale pour vous éviter l'avance de frais de santé.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span class="faq-question">Quels sont les horaires de visite pour les patients hospitalisés
+                                ?</span>
+                            <span class="faq-icon-box"><i data-lucide="plus"></i></span>
+                        </button>
+                        <div class="faq-content">
+                            <div class="faq-content-inner">
+                                Afin de respecter le repos de nos patients et le bon fonctionnement des soins, les
+                                visites sont autorisées tous les jours de 13h00 à 20h00. En service de soins intensifs
+                                et néonatalogie, des horaires spécifiques s'appliquent (renseignez-vous auprès du
+                                secrétariat).
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span class="faq-question">Y a-t-il un parking disponible pour les patients et visiteurs
+                                ?</span>
+                            <span class="faq-icon-box"><i data-lucide="plus"></i></span>
+                        </button>
+                        <div class="faq-content">
+                            <div class="faq-content-inner">
+                                Oui, la clinique dispose d'un parking sous-terrain sécurisé gratuit pendant les 30
+                                premières minutes, puis payant au tarif horaire standard. Les 3 premières places près de
+                                l'entrée principale sont réservées exclusivement aux ambulances et aux personnes à
+                                mobilité réduite (PMR).
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="section-header text-center fade-in-up">
+                    <span class="section-tagline">Nous Contacter</span>
+                    <h2 class="section-title">Où nous trouver ?</h2>
+                    <p class="section-subtitle">Des questions complémentaires ? Écrivez-nous ou venez directement nous
+                        rendre visite.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Info details -->
+                    <div class="contact-info-panel fade-in-up delay-100">
+                        <div class="contact-info-card">
+                            <div class="cic-icon"><i data-lucide="map-pin"></i></div>
+                            <div class="cic-details">
+                                <h4>Adresse Physique</h4>
+                                <p>15 Avenue de l'Héliport, 75015 Paris, France</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card">
+                            <div class="cic-icon"><i data-lucide="mail"></i></div>
+                            <div class="cic-details">
+                                <h4>Secrétariat E-mail</h4>
+                                <p>contact@carelumina.fr<br>admission@carelumina.fr</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card">
+                            <div class="cic-icon"><i data-lucide="clock"></i></div>
+                            <div class="cic-details">
+                                <h4>Horaires d'Ouverture</h4>
+                                <p>Accueil administratif : 8h00 - 19h30<br>Urgences médicales : 24h/24 et 7j/7</p>
+                            </div>
+                        </div>
+
+                        <!-- Stylized Map Mockup -->
+                        <div class="map-mockup">
+                            <div class="map-glow"></div>
+                            <div class="map-content">
+                                <div class="map-pin-indicator pulse-effect">
+                                    <i data-lucide="map-pin"></i>
+                                </div>
+                                <div class="map-info-popup">
+                                    <h5>Clinique CareLumina</h5>
+                                    <p>Accès A10 & RER B</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-panel fade-in-up delay-200">
+                        <form id="contactForm" class="contact-form" novalidate>
+                            <h3>Envoyez-nous un Message</h3>
+                            <p class="form-desc">Notre secrétariat administratif vous répondra sous 24h ouvrées.</p>
+
+                            <div class="form-group">
+                                <label for="contactName" class="form-label">Nom Complet</label>
+                                <input type="text" id="contactName" name="name" placeholder="Ex: Marie Dupont" required>
+                                <div class="invalid-feedback">Veuillez renseigner votre nom complet.</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactEmail" class="form-label">E-mail de contact</label>
+                                <input type="email" id="contactEmail" name="email" placeholder="Ex: marie@email.com"
+                                    required>
+                                <div class="invalid-feedback">Une adresse e-mail valide est nécessaire.</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactSubject" class="form-label">Sujet de votre demande</label>
+                                <input type="text" id="contactSubject" name="subject"
+                                    placeholder="Ex: Demande de dossier médical" required>
+                                <div class="invalid-feedback">Veuillez indiquer l'objet de votre demande.</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactMessage" class="form-label">Message</label>
+                                <textarea id="contactMessage" name="message" rows="5"
+                                    placeholder="Décrivez votre demande en quelques lignes..." required></textarea>
+                                <div class="invalid-feedback">Le corps du message ne peut pas être vide.</div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block pulse-effect">Envoyer le message <i
+                                    data-lucide="send"></i></button>
+
+                            <div class="contact-success-msg" id="contactSuccess">
+                                <i data-lucide="check-circle-2"></i> Message envoyé avec succès ! Nous vous
+                                recontacterons très prochainement.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-icon"><i data-lucide="activity"></i></span>
+                    <span class="logo-text">Care<span>Lumina</span></span>
+                </a>
+                <p class="footer-desc">Une clinique privée engagée pour le bien-être, la sécurité et la santé
+                    d'excellence de ses patients.</p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                    <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Liens Rapides</h4>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#services">Nos Services</a></li>
+                    <li><a href="#medecins">Notre Équipe</a></li>
+                    <li><a href="#temoignages">Témoignages</a></li>
+                    <li><a href="#reservation" class="text-primary font-weight-bold">Prendre RDV</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Spécialités</h4>
+                <ul>
+                    <li><a href="#services">Cardiologie</a></li>
+                    <li><a href="#services">Pédiatrie</a></li>
+                    <li><a href="#services">Neurologie</a></li>
+                    <li><a href="#services">Imagerie Médicale</a></li>
+                    <li><a href="#services">Analyses Médicales</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4>Lettre d'Information</h4>
+                <p>Abonnez-vous pour recevoir les conseils de santé de nos médecins et nos actualités sanitaires.</p>
+                <form id="newsletterForm" class="newsletter-form">
+                    <input type="email" placeholder="Votre adresse e-mail" required aria-label="Votre adresse e-mail">
+                    <button type="submit" class="btn btn-primary" aria-label="S'abonner"><i
+                            data-lucide="arrow-right"></i></button>
+                </form>
+                <div class="newsletter-success" id="newsletterSuccess">
+                    Inscription réussie !
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Clinique CareLumina. Tous droits réservés. Mentions Légales | RGPD</p>
+            <p class="footer-author">Conçu avec passion</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+
+</html>
